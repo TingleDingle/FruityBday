@@ -1,0 +1,75 @@
+#banner-img {
+    filter: brightness(0.7);
+    transition: filter 0.1s ease-in;
+    
+    &:hover{
+        filter: brightness(0.4);
+    }
+}
+
+.pfp-container {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+.pfp-image {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #e1e1e1;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.pfp-name {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #e1e1e1;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#side-overlay {
+    position: absolute;
+    top: 5%;
+    height: 90%;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+.side-overlay-left {
+    left: 5%;
+}
+
+.side-overlay-right {
+    right: 5%;
+}
+
+.overlay-text {
+    font-style: italic;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 80%;
+}
+
+.overlay-name {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-size: 14px;
+}

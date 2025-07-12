@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Tingaling",
+        "pfp_url": "assets/pfps/Tingaling.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "happy bday"
+        },
+        "position": {
+            "x": 629,
+            "y": 418
+        },
+        "rotation": 30
+    },
+    {
+        "name": "Zoro",
+        "pfp_url": "assets/pfps/Zoro.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "happy bday"
+        },
+        "position": {
+            "x": 210,
+            "y": 190
+        },
+        "rotation": 30
+    },
+    {
+        "name": "Jutsu",
+        "pfp_url": "assets/pfps/Jutsu.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "happy bday"
+        },
+        "position": {
+            "x": 304,
+            "y": 48
+        },
+        "rotation": 30
+    },
+    {
+        "name": "Feng",
+        "pfp_url": "assets/pfps/Feng.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "happy bday"
+        },
+        "position": {
+            "x": 682,
+            "y": 290
+        },
+        "rotation": 30
+    },
+    {
+        "name": "Yoshikage Kira",
+        "pfp_url": "assets/pfps/Yoshikage Kira.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "happy bday"
+        },
+        "position": {
+            "x": 775,
+            "y": 175
+        },
+        "rotation": 30
+    },
+    {
+        "name": "Anti Matter",
+        "pfp_url": "assets/pfps/Anti Matter.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "happy bday"
+        },
+        "position": {
+            "x": 90,
+            "y": 180
+        },
+        "rotation": 30
+    }
+]
