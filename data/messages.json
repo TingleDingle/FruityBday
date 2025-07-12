@@ -49,7 +49,7 @@
         "pfp_url": "assets/pfps/Fang Yuan.jpg",
         "msg_type": "text",
         "msg_content": {
-            "text": "happy bday"
+            "text": "Happy Birthday master keep being the frutiest person we know and love"
         },
         "position": {
             "x": 682,
@@ -129,8 +129,8 @@
         "placement": "bottom",
         "font-size": "medium",
         "position": {
-            "x": 520,
-            "y": 200
+            "x": 570,
+            "y": 300
         },
         "rotation": 30
     }
