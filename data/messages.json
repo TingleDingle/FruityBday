@@ -10,6 +10,8 @@
             "x": 629,
             "y": 418
         },
+        "placement": "bottom",
+        "font-size": "small",
         "rotation": 30
     },
     {
@@ -23,6 +25,8 @@
             "x": 210,
             "y": 190
         },
+        "placement": "bottom",
+        "font-size": "large",
         "rotation": 30
     },
     {
@@ -30,17 +34,19 @@
         "pfp_url": "assets/pfps/Jutsu.jpg",
         "msg_type": "text",
         "msg_content": {
-            "text": "Heya Fruity... Happy Birthday /nCongratulations on surviving another year and me not getting goth Mommy this year too..."
+            "text": "Heya Fruity... Happy Birthday \n\nCongratulations on surviving another year and me not getting goth Mommy this year too..."
         },
         "position": {
             "x": 304,
             "y": 48
         },
+        "placement": "bottom",
+        "font-size": "medium",
         "rotation": 30
     },
     {
-        "name": "Feng",
-        "pfp_url": "assets/pfps/Feng.jpg",
+        "name": "Fang Yuan",
+        "pfp_url": "assets/pfps/Fang Yuan.jpg",
         "msg_type": "text",
         "msg_content": {
             "text": "happy bday"
@@ -49,6 +55,8 @@
             "x": 682,
             "y": 290
         },
+        "placement": "bottom",
+        "font-size": "large",
         "rotation": 30
     },
     {
@@ -56,12 +64,14 @@
         "pfp_url": "assets/pfps/Yoshikage Kira.jpg",
         "msg_type": "text",
         "msg_content": {
-            "text": "I want to live a quiet life… but even I must pause to wish you a happy birthday, Fruity. /nRare are the days—and the hands—that leave such a lasting impression, which is why we must cherish them even more"
+            "text": "I want to live a quiet life… but even I must pause to wish you a happy birthday, Fruity. \n\nRare are the days—and the hands—that leave such a lasting impression, which is why we must cherish them even more"
         },
         "position": {
             "x": 775,
             "y": 175
         },
+        "placement": "bottom",
+        "font-size": "medium",
         "rotation": 30
     },
     {
@@ -69,8 +79,10 @@
         "pfp_url": "assets/pfps/Anti Matter.jpg",
         "msg_type": "text",
         "msg_content": {
-            "text": "~I bid my most humble greetings to the ancient one/nAnother cycle has come to pass and the sheep still cry from your annual birthday shagging/nYour presence is missed, and your laughter enshrined~/nGood job on making this far fruitcup, ya worked real hard and you deserve to take a day to acknowledge how far you've come./nMay your friends be many, and your worries few 🤙"
+            "text": "~I bid my most humble greetings to the ancient one\n\nAnother cycle has come to pass and the sheep still cry from your annual birthday shagging\n\nYour presence is missed, and your laughter enshrined~\n\nGood job on making this far fruitcup, ya worked real hard and you deserve to take a day to acknowledge how far you've come.\n\nMay your friends be many, and your worries few 🤙"
         },
+        "placement": "bottom",
+        "font-size": "small",
         "position": {
             "x": 90,
             "y": 180
@@ -82,25 +94,29 @@
         "pfp_url": "assets/pfps/Mizuki.jpg",
         "msg_type": "text",
         "msg_content": {
-            "text": "I love my Fruity /nI think everyone should have a Fruity in their lives/nJust not my Fruity 💖"
+            "text": "I love my Fruity \n\nI think everyone should have a Fruity in their lives\n\nJust not my Fruity 💖"
         },
         "position": {
-            "x": 150,
-            "y": 60
+            "x": 407,
+            "y": 429
         },
+        "placement": "top",
+        "font-size": "medium",
         "rotation": 30
     },
      {
-        "name": "Augustus",
-        "pfp_url": "assets/pfps/Augustus.jpg",
+        "name": "SWP",
+        "pfp_url": "assets/pfps/SWP.jpg",
         "msg_type": "text",
         "msg_content": {
             "text": "Let's get coccy"
         },
         "position": {
-            "x": 540,
-            "y": 220
+            "x": 470,
+            "y": 429
         },
+        "placement": "top",
+        "font-size": "large",
         "rotation": 30
     },
     {
@@ -110,6 +126,8 @@
         "msg_content": {
             "text": "Fruity my tan mixed once upon a time emo asain girlfreind dark reunion has kept us apart for to long"
         },
+        "placement": "bottom",
+        "font-size": "medium",
         "position": {
             "x": 520,
             "y": 200

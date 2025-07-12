@@ -1,3 +1,35 @@
+/* Global scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the entire scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Color of the scrollbar handle */
+    border-radius: 4px;
+    /* Roundness of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+    /* Color of the tracking area */
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+
 #banner-img {
     filter: brightness(0.7);
     transition: filter 0.1s ease-in;
@@ -45,6 +77,11 @@
     width: 40%;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 16px;
 }
 
 .side-overlay-left {
@@ -57,19 +94,18 @@
 
 .overlay-text {
     font-style: italic;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    color: #e1e1e1;
+    white-space: pre-line;
     width: 80%;
+    align-self: center;
+    flex: 1 1 auto;
+    overflow: auto;
+    display: flex;
+    align-items: center;
 }
 
 .overlay-name {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    color: white;
     font-size: 14px;
+    color: #e1e1e1;
+    align-self: end;
 }

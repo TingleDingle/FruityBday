@@ -7,13 +7,58 @@ function onPlayerReady() {
 }
 
 function onPlayerStateChange(event) {
-    if (event.data === YT.PlayerState.PLAYING || event.data === YT.PlayerState.BUFFERING) {
+    if (event.data === YT.PlayerState.PLAYING) {
         updateVideoInfo();
     }
 } 
 
-function onYouTubeIframeAPIReady() {
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+async function getPlaylistVideoIds(playlistId) {
+    const apiKey = 'AIzaSyAratsJKdAO4iWZyUCBizJMGaowJnOqAyc'; // Replace with your actual API key
+    const apiUrl = `https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=50&playlistId=${playlistId}&key=${apiKey}`;
+
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+
+        if (data.items) {
+            return data.items.map(item => item.contentDetails.videoId);
+        } else {
+            console.error('Error fetching playlist:', data);
+            return [];
+        }
+    } catch (error) {
+        console.error('Error fetching playlist:', error);
+        return [];
+    }
+}
+
+async function onYouTubeIframeAPIReady() {
+    const ADO_PLAYLIST_ID = 'OLAK5uy_mT2KInkQZCW-n5okJvoqeBtNYeUb4bEUQ';
+    const DAZBEE_PLAYLIST_ID = 'PLSQSRgGmmWo4vgfufqo9p-5Mt_ge4RjdJ';
+
+    const adoVideoIds = await getPlaylistVideoIds(ADO_PLAYLIST_ID);
+    const dazbeeVideoIds = await getPlaylistVideoIds(DAZBEE_PLAYLIST_ID);
+
+    const allVideoIds = [...adoVideoIds, ...dazbeeVideoIds];
+
+    const shuffledVideoIds = shuffleArray([...allVideoIds]); 
+
     player = new YT.Player('yt-player', {
+        height: '100',
+        width: '100',
+        playerVars: {
+            listType: 'playlist',
+            playlist: shuffledVideoIds.join(','),
+            autoplay: 1,
+        },
         events: {
             onReady: onPlayerReady,
             onStateChange: onPlayerStateChange
@@ -56,14 +101,20 @@ function togglePlayPause() {
 function nextVideo() {
     if (player) {
         player.nextVideo();
-        setTimeout(updateVideoInfo, 500);
+        setTimeout(() => {
+            updateVideoInfo();
+            if (!isPlaying) togglePlayPause();    
+        }, 500);
     }
 }
 
 function prevVideo() {
     if (player) {
         player.previousVideo();
-        setTimeout(updateVideoInfo, 500);
+        setTimeout(() => {
+            updateVideoInfo();
+            if (!isPlaying) togglePlayPause();
+        }, 500);
     }
 }
 
@@ -164,7 +215,16 @@ async function loadData() {
         messagesData.forEach((message, index) => { // Assuming messagesData has a 'messages' array
             const position = message.position;
 
-            const pfp = $('<div>')
+            const pfpImage = $('<img>')
+                .on('click', () => messageState && messageState.selectUser(index))
+                .attr('src', message.pfp_url)
+                .addClass('pfp-image');
+
+            const pfpText = $('<p>')
+                .text(message.name)
+                .addClass('pfp-name')
+
+            const pfpContainer = $('<div>')
                 .attr('id', `pfp-${index}`)
                 .addClass('pfp-container')
                 .css({
@@ -172,20 +232,16 @@ async function loadData() {
                     'height': `${IMAGE_SIZE}px`,
                     'top': position.y + 'px', // Use message's y position
                     'left': position.x + 'px', // Use message's x position
-                })
-                .append(
-                    $('<img>')
-                        .on('click', () => messageState && messageState.selectUser(index))
-                        .attr('src', message.pfp_url)
-                        .addClass('pfp-image')
-            )
-            .append(
-                $('<p>')
-                    .text(message.name)
-                    .addClass('pfp-name')
-            );
+                });
 
-            $('#banner-container').append(pfp);
+            if (message.placement === 'bottom') {
+                pfpContainer.append(pfpImage).append(pfpText);
+            }
+            else {
+                pfpContainer.append(pfpText).append(pfpImage);
+            }
+
+            $('#banner-container').append(pfpContainer);
         });
         updateDotPositions(); // Initial update
     } 
