@@ -30,7 +30,7 @@
         "pfp_url": "assets/pfps/Jutsu.jpg",
         "msg_type": "text",
         "msg_content": {
-            "text": "happy bday"
+            "text": "Heya Fruity... Happy Birthday /nCongratulations on surviving another year and me not getting goth Mommy this year too..."
         },
         "position": {
             "x": 304,
@@ -56,7 +56,7 @@
         "pfp_url": "assets/pfps/Yoshikage Kira.jpg",
         "msg_type": "text",
         "msg_content": {
-            "text": "happy bday"
+            "text": "I want to live a quiet life… but even I must pause to wish you a happy birthday, Fruity. /nRare are the days—and the hands—that leave such a lasting impression, which is why we must cherish them even more"
         },
         "position": {
             "x": 775,
@@ -69,7 +69,7 @@
         "pfp_url": "assets/pfps/Anti Matter.jpg",
         "msg_type": "text",
         "msg_content": {
-            "text": "happy bday"
+            "text": "~I bid my most humble greetings to the ancient one/nAnother cycle has come to pass and the sheep still cry from your annual birthday shagging/nYour presence is missed, and your laughter enshrined~/nGood job on making this far fruitcup, ya worked real hard and you deserve to take a day to acknowledge how far you've come./nMay your friends be many, and your worries few 🤙"
         },
         "position": {
             "x": 90,
@@ -87,6 +87,32 @@
         "position": {
             "x": 150,
             "y": 60
+        },
+        "rotation": 30
+    },
+     {
+        "name": "Augustus",
+        "pfp_url": "assets/pfps/Augustus.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "Let's get coccy"
+        },
+        "position": {
+            "x": 540,
+            "y": 220
+        },
+        "rotation": 30
+    },
+    {
+        "name": "JujixFruity",
+        "pfp_url": "assets/pfps/JujixFruity.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "Fruity my tan mixed once upon a time emo asain girlfreind dark reunion has kept us apart for to long"
+        },
+        "position": {
+            "x": 520,
+            "y": 200
         },
         "rotation": 30
     }
