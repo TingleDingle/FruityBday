@@ -43,11 +43,13 @@ function togglePlayPause() {
 
     if (isPlaying) {
         player.pauseVideo();
-    }
-    else {
+        $('#playButton').removeClass('hidden');
+        $('#pauseButton').addClass('hidden');
+    } else {
         player.playVideo();
+        $('#playButton').addClass('hidden');
+        $('#pauseButton').removeClass('hidden');
     }
-
     isPlaying = !isPlaying;
 }
 
