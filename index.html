@@ -81,10 +81,16 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                 </svg>
             </button>
-            <button onclick="togglePlayPause()" class="text-white hover:text-gray-300 focus:outline-none mx-2">
+            <button id="playButton" onclick="togglePlayPause()" class="text-white hover:text-gray-300 focus:outline-none mx-2">
                 <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"></path>
+                </svg>
+            </button>
+            <button id="pauseButton" onclick="togglePlayPause()"
+                class="text-white hover:text-gray-300 focus:outline-none mx-2 hidden">
+                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5h2v14H8zM14 5h2v14h-2z"></path>
                 </svg>
             </button>
             <button onclick="nextVideo()" class="text-white hover:text-gray-300 focus:outline-none">
