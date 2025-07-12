@@ -76,5 +76,18 @@
             "y": 180
         },
         "rotation": 30
+    },
+        {
+        "name": "Mizuki",
+        "pfp_url": "assets/pfps/Zoro.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "I love my Fruity /nI think everyone should have a Fruity in their lives/nJust not my Fruity 💖"
+        },
+        "position": {
+            "x": 150,
+            "y": 60
+        },
+        "rotation": 30
     }
 ]
