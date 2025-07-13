@@ -314,4 +314,51 @@
         left: auto;
         right: auto;
     }
+    /* === God Dog's Bizarre Adventures Section Styles === */
+.gdbasection {
+  background-color: #fff6fb;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 900px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.1);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #222;
+}
+
+.gdbasection h2 {
+  color: #ff69b4;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gdbasection h3 {
+  color: #ff69b4;
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.gdbasection p {
+  font-size: 1em;
+  line-height: 1.6em;
+  margin-bottom: 15px;
+}
+
+.gdbasection ul {
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+
+.gdbasection ul li {
+  list-style-type: square;
+  margin-bottom: 8px;
+}
+
+.gdbasection a {
+  color: #c91c76;
+  text-decoration: underline;
+}
+
 }
