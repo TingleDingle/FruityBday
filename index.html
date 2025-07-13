@@ -10,17 +10,125 @@
 
 <body class="w-screen overflow-x-hidden">
     <div class="flex flex-col items-center justify-center">
-        <div class="flex items-center justify-center">
-            <div class="flex-none flex flex-col items-center">
-                <img src="assets/memes/god_dog_base.jpg" alt="Fruity" width="100" height="100">
+        <div class="god-dog-background" style="
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100vh;
+                    z-index: -1;
+                    opacity: 1;
+                    overflow: hidden; /* Hide any images that go beyond the div's boundaries */
+                ">
+            <img src="assets/memes/God Dog Awake.jpg"
+                style="width: 300px; height: 350px; position: absolute; top: 0; left: 0; display: none;">
+            <img src="assets/memes/God Dog Base.jpg"
+                style="width: 300px; height: 350px; position: absolute; top: 0; left: 200px; display: none;">
+            <img src="assets/memes/GOD DOG HEAD.png"
+                style="width: 300px; height: 350px; position: absolute; top: 250px; left: 0; display: none;">
+            <img src="assets/memes/God Dog Liftoff.png"
+                style="width: 300px; height: 350px; position: absolute; top: 250px; left: 200px; display: none;">
+        </div>
+        
+        <div class="flex items-center justify-center" style="width: 100%;">
+            <div class="relative w-[150px] h-[100px]">
+                <img src="assets/misc/New Zealand Flag.png" style="width: 150px; height: 100px;" />
+                <img src="assets/misc/Kiwi Bird.png" class="absolute bottom-2 left-2 w-10 h-10" />
+                <img src="assets/misc/Kiwi Fruit.png" class="absolute bottom-2 right-2 w-10 h-6" />
             </div>
-            <div class="flex-none flex flex-col text-center">
-                <div class="text-4xl font-bold uppercase">🎂 Happy birthday Fruity 🎂</div>
+            <div style="position: relative; height: 100px; flex: 1 1 auto;" class="h-[150px]">
+                <img src="assets/memes/God Dog Liftoff.png" class="h-[150px]" style="height: 100px; width: 100%" />
+                <div style="position: absolute; top: 50%; right: 8px; transform: translateY(-50%); font-size: 2.5rem">🥳</div>
+                <div style="position: absolute; top: 50%; left: 8px; transform: translateY(-50%) scaleX(-1); font-size: 2.5rem">🥳</div>
             </div>
-            <div class="flex-none flex flex-col items-center">
-                <img src="assets/memes/god_dog_base.jpg" alt="Fruity" width="100" height="100">
+            <div class="relative w-[150px] h-[100px]">
+                <img src="assets/misc/Japan Flag.jpg" style="width: 150px; height: 100px;" />
+                <img src="assets/misc/Sakura.jpg" class="absolute top-1 left-1 w-8 h-8" />
+                <img src="assets/misc/Subway.png" class="absolute bottom-2 right-4 w-8 h-8" />
             </div>
         </div>
+        
+        <div class="inline-flex flex-wrap justify-center gap-10 intro-container">
+            <div class="flex flex-col justify-center intro-section">
+                <div class="intro-text">Happy Birthday</div>
+                <div class="intro-text intro-text-jp">お誕生日おめでとう</div>
+                <img src="assets/gifts/Geppetto Rocks.jpg" class="intro-img" />
+                <div class="intro-credit">
+                    <div>
+                        <p class="text-gray-400 italic text-xs">With Love From</p>
+                        <p>Geppetto 💚</p>
+                    </div>
+                    <div>
+                        <img class="intro-pfp" src="assets/pfps/Geppetto.jpg" />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col justify-center intro-section">
+                <div class="intro-text">To Our Cherished Nakama</div>
+                <div class="intro-text intro-text-jp">私たちのわずかに同性愛者の友人で</div>
+                <img src="assets/gifts/Zoro Art.jpeg" class="intro-img" /><div class="intro-credit">
+                    <div>
+                        <p class="text-gray-400 italic text-xs">Artwork Carved By</p>
+                        <p>Swordsman Roronoa Zoro ⚔️🍻</p>
+                    </div>
+                    <div>
+                        <img class="intro-pfp" src="assets/pfps/Zoro.jpg" />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col justify-center intro-section">
+                <div class="intro-text">And Coccy Overlord, Fruity</div>
+                <div class="intro-text intro-text-jp">おばあちゃん、フルーティー</div>
+                <img src="assets/gifts/Popsyy.gif" class="intro-img" /><div class="intro-credit">
+                    <div>
+                        <p class="text-gray-400 italic text-xs">Handcrafted By</p>
+                        <p>Popsyy <333</p>
+                    </div>
+                    <div>
+                        <img class="intro-pfp" src="assets/pfps/Popsyy.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="intro-video" class="flex justify-center items-center flex-wrap" style="width: 100%; position: relative;">
+            <div class="flex flex-row md:flex-col gap-6 md:gap-0 p-4 md:p-0 justify-evenly items-center" style="height: -webkit-fill-available;">
+                <div class="flex justify-center items-center">
+                    <img src="assets/memes/Jojo Fruity.png" alt="Jojo Fruity" class="video-meme">
+                </div>
+                <div class="text-center text-white font-bold md:text-4xl text-2xl">Video Wishes</div>
+                <div class="flex justify-center items-center">
+                    <img src="assets/memes/Weird Cupcake.png" alt="Weird Cupcake" class="video-meme">
+                </div>
+            </div>
+            <div style="position: relative;">
+                <video src="assets/gifts/Fang.mp4" controls width="320"></video>
+                <div class="intro-credit" style="width: 100%;">
+                    <div>
+                        <p class="text-gray-400 italic text-xs">Freaky Mf Who Sent Ts 🥀</p>
+                        <p class="text-white">Fang Yuan 👻</p>
+                    </div>
+                    <div>
+                        <img class="intro-pfp" src="assets/pfps/Fang Yuan.jpg" style="width: 50px; height: 50px;" />
+                    </div>
+                </div>
+            </div>
+            <div style="position: relative;">
+                <video src="assets/gifts/Papers.mp4" controls width="320"></video>
+                <div class="intro-credit" style="width: 100%;">
+                    <div>
+                        <p class="text-gray-400 italic text-xs">Handpicked Reel By</p>
+                        <p class="text-white">Lightning McQueen Papyrus Papers</p>
+                    </div>
+                    <div>
+                        <img class="intro-pfp" src="assets/pfps/Papers.jpg" style="width: 50px; height: 50px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <h2>Hey Fruity,
 
             Even if you’re not around all the time, you’ve still managed to be one of the funniest, most memorable people in the whole server—and today, we all just wanted to wish you the happiest birthday ever! 🎂🎈</br></br>
@@ -55,13 +163,15 @@
     </div>
 
     <div class="fixed bottom-4 right-4 bg-black bg-opacity-80 rounded-lg p-2 flex flex-col justify-center items-center" style="width: 400px;">
+        <div class="text-white mb-2 font-bold">Ado x DAZBEE Mix Playlist</div>
         <div id="video-info" class="flex align-center justify-center overflow-hidden max-w-full" style="width: fit-content;">
             <div class="mr-4">
-                <img id="video-thumbnail" src="" width="80" alt="Thumbnail" class="rounded-md mb-1">
+                <img id="video-thumbnail" src="" width="80" alt="Thumbnail" class="rounded-md mb-1 hidden">
+                <div id="thumbnail-skeleton" class="skeleton thumbnail-skeleton"></div>
             </div>
             <div class="flex flex-col flex-grow min-w-0 align-center justify-center">
-                <div id="video-title" class="text-white text-sm whitespace-nowrap overflow-hidden overflow-ellipsis">Loading Title...</div>
-                <div id="video-artist" class="text-gray-300 text-xs whitespace-nowrap overflow-hidden overflow-ellipsis">Loading Artist...</div>
+                <div id="video-title" class="text-white text-sm whitespace-nowrap overflow-hidden overflow-ellipsis skeleton skeleton-title"></div>
+                <div id="video-artist" class="text-gray-300 text-xs whitespace-nowrap overflow-hidden overflow-ellipsis skeleton skeleton-artist"></div>
             </div>
         </div>
     

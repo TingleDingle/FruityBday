@@ -70,16 +70,22 @@ function updateVideoInfo() {
     if (!player) return;
 
     const data = player.getVideoData();
-    const title = data.title || 'Music';
-    const artist = data.author || 'Unknown';
+    const title = data.title || null;
+    const artist = data.author || 'Artist';
     const videoId = data.video_id || '';
 
-    $('#video-title').text(title);
-    $('#video-artist').text(artist);
+    if (title) {
+        $('#video-title').text(title).removeClass('skeleton skeleton-title');
+    }
+
+    if (artist) {
+        $('#video-artist').text(artist).removeClass('skeleton skeleton-artist');
+    }
 
     if (videoId) {
         const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-        $('#video-thumbnail').attr('src', thumbnailUrl);
+        $('#video-thumbnail').attr('src', thumbnailUrl).removeClass('hidden'); // Show image
+        $('#thumbnail-skeleton').addClass('hidden');
     }
 }
 
@@ -97,6 +103,18 @@ function togglePlayPause() {
     }
     isPlaying = !isPlaying;
 }
+
+// Interval checker for play state
+setInterval(() => {
+    if (!player) return;
+
+    const currentPlayState = player.getPlayerState();
+    const isCurrentlyPlaying = currentPlayState === YT.PlayerState.PLAYING;
+
+    if (isCurrentlyPlaying !== isPlaying) {
+        togglePlayPause();
+    }
+}, 500);
 
 function nextVideo() {
     if (player) {
@@ -312,4 +330,44 @@ $(document).ready(function () {
     });
 
     resizeObserver.observe(bannerImg);
+
+    // Call the function to create the tiled background
+    createTiledBackground();
+    window.addEventListener('resize', createTiledBackground);
 });
+
+// Set up tiled images
+const backgroundDiv = document.querySelector('.god-dog-background');
+const images = backgroundDiv.querySelectorAll('img');
+const imageWidth = 300;
+const imageHeight = 350;
+
+function createTiledBackground() {
+    const divWidth = window.innerWidth;
+    const divHeight = window.innerHeight;
+
+    const numImagesWidth = Math.ceil(divWidth / imageWidth);
+    const numImagesHeight = Math.ceil(divHeight / imageHeight);
+
+    backgroundDiv.innerHTML = '';
+
+    for (let i = 0; i < numImagesHeight; i++) {
+        for (let j = 0; j < numImagesWidth; j++) {
+            // Calculate the index of the image to use
+            const imageIndex = (i * numImagesWidth + j) % images.length;
+            const img = images[imageIndex];
+
+            // Create a new image element (clone the existing one)
+            const newImg = img.cloneNode(true);
+            newImg.style.display = 'block';
+
+            // Position the new image
+            newImg.style.position = 'absolute';
+            newImg.style.left = j * imageWidth + 'px';
+            newImg.style.top = i * imageHeight + 'px';
+
+            // Append the new image to the background div
+            backgroundDiv.appendChild(newImg);
+        }
+    }
+}

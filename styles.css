@@ -1,34 +1,150 @@
-/* Global scrollbar styles */
-::-webkit-scrollbar {
-    width: 8px;
-    /* Width of the entire scrollbar */
-}
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.3);
-    /* Color of the scrollbar handle */
-    border-radius: 4px;
-    /* Roundness of the scrollbar handle */
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: transparent;
-    /* Color of the tracking area */
-}
 
 /* Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
 }
 
+.skeleton {
+    background: linear-gradient(90deg, #333 25%, #555 50%, #333 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1s infinite linear;
+    border-radius: 4px;
+    line-height: 1;
+    /* Prevent content from affecting height */
+}
+
+.thumbnail-skeleton {
+    width: 350px;
+    height: 65px;
+    border-radius: 8px;
+    /* Match thumbnail border-radius */
+}
+
+.skeleton-title {
+    width: 70%;
+    height: 1em;
+}
+
+.skeleton-artist {
+    width: 50%;
+    height: 0.8em;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #fff;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.intro-img {
+    width: 450px;
+    height: 325px;
+}
+
+.intro-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    animation: glow 5s ease-in-out 1;
+}
+
+.intro-text-jp {
+    font-size: 1.5rem;
+}
+
+.intro-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 32px 16px;
+    width: 100%;
+}
+
+.intro-section {
+    color: #e1e1e1;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px 5px 0 0;
+    padding: 5px 10px;
+}
+
+.intro-section img {
+    border-radius: 5px;
+}
+
+.intro-credit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.intro-pfp {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #e1e1e1;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 0.5px #fff, 0 0 1px #fff, 0 0 1.5px #e60073, 0 0 2px #e60073, 0 0 2.5px #e60073, 0 0 3px #e60073, 0 0 3.5px #e60073;
+    }
+
+    50% {
+        text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #e60073, 0 0 4px #e60073, 0 0 5px #e60073, 0 0 6px #e60073, 0 0 7px #e60073;
+    }
+
+    100% {
+        text-shadow: none;
+    }
+}
+
+#intro-video {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 16px 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.video-meme {
+    width: 100px;
+    height: 100px;
+}
+
+@media (min-width: 768px) {
+    .video-meme {
+        width: 250px;
+        height: 250px;
+    }
+}
 
 #banner-img {
     filter: brightness(0.7);
@@ -109,3 +225,4 @@
     color: #e1e1e1;
     align-self: end;
 }
+
