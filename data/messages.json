@@ -238,6 +238,36 @@
             "y": 265
         },
         "rotation": 30
+    },
+    {
+        "name": "Sonoma",
+        "pfp_url": "assets/pfps/Alex.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "Some people log in and leave.\n\nBut Fruity? She entered the chat like a typo and stayed like a plot twist.\n\nCute, confusing, mature yet somehow chaotic.\n\nZesty yap whenever she's online.\n\nHappy Birthday to the one who made even Disqus feel like a storyline."
+        },
+        "placement": "bottom",
+        "font_size": "small",
+        "position": {
+            "x": 120,
+            "y": 380
+        },
+        "rotation": 30
+    },
+    {
+        "name": "Sathvik",
+        "pfp_url": "assets/pfps/Sathvik.jpg",
+        "msg_type": "url",
+        "msg_content": {
+            "text": "Count your age by friends, not years. Count your life by smiles, not tears.\n by John Lennon"
+        },
+        "placement": "bottom",
+        "font_size": "medium",
+        "position": {
+            "x": 200,
+            "y": 100
+        },
+        "rotation": 30
     }
 ]
 
