@@ -105,17 +105,17 @@ function togglePlayPause() {
     isPlaying = !isPlaying;
 }
 
-// Interval checker for play state
-setInterval(() => {
-    if (!player) return;
+// // Interval checker for play state
+// setInterval(() => {
+//     if (!player) return;
 
-    const currentPlayState = player.getPlayerState();
-    const isCurrentlyPlaying = currentPlayState === YT.PlayerState.PLAYING;
+//     const currentPlayState = player.getPlayerState();
+//     const isCurrentlyPlaying = currentPlayState === YT.PlayerState.PLAYING;
 
-    if (isCurrentlyPlaying !== isPlaying) {
-        togglePlayPause();
-    }
-}, 500);
+//     if (isCurrentlyPlaying !== isPlaying) {
+//         togglePlayPause();
+//     }
+// }, 500);
 
 function nextVideo() {
     if (player) {
