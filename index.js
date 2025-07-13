@@ -1,3 +1,4 @@
+
 // YT Player API
 let player;
 let isPlaying = false;
@@ -201,7 +202,7 @@ class MessageState {
                     $('<p>')
                         .text(message.msg_content.text)
                         .addClass('overlay-text')
-                        .addClass(message.font_size === 'small' ? 'text-sm' : message.font_size === 'large' ? 'text-5xl' : 'text-3xl')
+                        .addClass(message.font_size === 'small' ? 'text-xs md:text-sm' : message.font_size === 'large' ? 'text-md md:text-5xl' : 'text-sm md:text-3xl')
                 )
                 .append(
                     $('<p>')
