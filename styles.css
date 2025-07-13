@@ -195,7 +195,6 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     box-sizing: border-box;
     padding: 16px;
 }
@@ -230,6 +229,23 @@
     align-self: end;
 }
 
+.overlay-close {
+    position: absolute;
+    top: 6px;
+    font-size: 1.4rem;
+    color: #e1e1e1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.overlay-close-right {
+    right: 10px;
+}
+
+.overlay-close-left {
+    left: 10px;
+}
+
 .flash-box-shadow {
     animation: flash 2s ease-in-out;
 }
@@ -256,6 +272,11 @@
 
     .pfp-name {
         font-size: 1rem;
+    }
+
+    .overlay-text.overlay-overflow {
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 }
 

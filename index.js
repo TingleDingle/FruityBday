@@ -199,6 +199,12 @@ class MessageState {
                 .attr('id', 'side-overlay')
                 .addClass(`side-overlay-${side}`)
                 .append(
+                    $('<span>')
+                        .html('&times;')
+                        .addClass(`overlay-close overlay-close-${side}`)
+                        .on('click', () => this.deselectUser())
+                )
+                .append(
                     $('<p>')
                         .text(message.msg_content.text)
                         .addClass('overlay-text')
@@ -210,8 +216,17 @@ class MessageState {
                         .addClass('overlay-name')
                 )
                 .appendTo(bannerContainer);
+
+            const textEl = this.overlayElement.find('.overlay-text');
             
-            this.overlayElement.find('.overlay-text').scrollTop(0);
+            textEl.scrollTop(0);
+            if (textEl[0].scrollHeight > textEl.innerHeight()) {
+                textEl.addClass('overlay-overflow');
+            }
+            else {
+                textEl.removeClass('overlay-overflow');
+            }
+
         } else if (message.msg_type === 'url') {
             const targetId = message.msg_content.url;
             if (targetId) {
