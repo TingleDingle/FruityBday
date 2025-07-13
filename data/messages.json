@@ -4,14 +4,14 @@
         "pfp_url": "assets/pfps/Tingaling.jpg",
         "msg_type": "text",
         "msg_content": {
-            "text": "happy bday"
+            "text": "Yo Madame Fruity, I know your male wife Light is getting all lonely up there in hell, but you'll get there eventually, so don't rush your eventual kamidere ojou-sama demise just yet. You still have those children trapped in your basement after all 💔\n\nGive yourself a breather from time to time, and try not to wear yourself too thin. I don't think you're one to idle when things are to be done, but still. Ya don't want life to burn you again... (literally)\n\nDon't think I've said this before, so I'll take the chance to now - thanks for inviting me to GDC. I'd been invited to these chatrooms before, but they always seemed kinda werid, and tbh I wouldn't have joined GDC even if I saw you there if someone else had invited me. Turns out a cult aint allat bad after all. Or I've just gotten converted in the process 🙏\n\nWell then... 'till the next channels invite o7."
         },
         "position": {
             "x": 629,
             "y": 418
         },
         "placement": "bottom",
-        "font-size": "small",
+        "font_size": "small",
         "rotation": 30
     },
     {
@@ -19,14 +19,14 @@
         "pfp_url": "assets/pfps/Zoro.jpg",
         "msg_type": "text",
         "msg_content": {
-            "text": "happy bday"
+            "text": "It feels just like yesterday when I became part of this cult, no, family, and it’s\n\nalready been 8 months… I have to thank you for bringing us all together and of course, tanjoubi omedetou!\n\nP.S. I’ll do my best to not get lost on my way to your party. Hope there is lots of sake there."
         },
         "position": {
             "x": 210,
             "y": 190
         },
         "placement": "bottom",
-        "font-size": "large",
+        "font_size": "small",
         "rotation": 30
     },
     {
@@ -41,7 +41,7 @@
             "y": 48
         },
         "placement": "bottom",
-        "font-size": "medium",
+        "font_size": "medium",
         "rotation": 30
     },
     {
@@ -56,7 +56,7 @@
             "y": 290
         },
         "placement": "bottom",
-        "font-size": "large",
+        "font_size": "medium",
         "rotation": 30
     },
     {
@@ -71,7 +71,7 @@
             "y": 175
         },
         "placement": "bottom",
-        "font-size": "medium",
+        "font_size": "small",
         "rotation": 30
     },
     {
@@ -82,7 +82,7 @@
             "text": "~I bid my most humble greetings to the ancient one\n\nAnother cycle has come to pass and the sheep still cry from your annual birthday shagging\n\nYour presence is missed, and your laughter enshrined~\n\nGood job on making this far fruitcup, ya worked real hard and you deserve to take a day to acknowledge how far you've come.\n\nMay your friends be many, and your worries few 🤙"
         },
         "placement": "bottom",
-        "font-size": "small",
+        "font_size": "small",
         "position": {
             "x": 90,
             "y": 180
@@ -101,7 +101,7 @@
             "y": 429
         },
         "placement": "top",
-        "font-size": "medium",
+        "font_size": "medium",
         "rotation": 30
     },
      {
@@ -116,7 +116,7 @@
             "y": 429
         },
         "placement": "top",
-        "font-size": "large",
+        "font_size": "large",
         "rotation": 30
     },
     {
@@ -127,11 +127,118 @@
             "text": "Fruity my tan mixed once upon a time emo asain girlfreind dark reunion has kept us apart for to long"
         },
         "placement": "bottom",
-        "font-size": "medium",
+        "font_size": "medium",
         "position": {
-            "x": 570,
-            "y": 300
+            "x": 563,
+            "y": 101
+        },
+        "rotation": 30
+    },
+    {
+        "name": "Popsyy",
+        "pfp_url": "assets/pfps/Popsyy.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "FruitD HappyB DayW e Lov Eyour Good Friend\n\nYuo'er 69 years olde get 420 bitchze in jpanz 5ever\n\nWishign u happiness n healt\n\nThankin for take my dumb accident post down on channles pls tc urorslef we lov u frr\n\npls dont get hit by a meteor, frome pop"
+        },
+        "placement": "top",
+        "font_size": "small",
+        "position": {
+            "x": 820,
+            "y": 420
+        },
+        "rotation": 30
+    },
+    {
+        "name": "Zoey",
+        "pfp_url": "assets/pfps/Zoey.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "Happy birthday fruityyy I hope you enjoy this day as much as possible; unfortunately I haven't been active much so apologies otherwise I wish you the very best!"
+        },
+        "placement": "bottom",
+        "font_size": "small",
+        "position": {
+            "x": 350,
+            "y": 262
+        },
+        "rotation": 30
+    },
+    {
+        "name": "Oku (🐶)",
+        "pfp_url": "assets/pfps/Oku.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "Happy bday i hope u find a husband whos name is oku"
+        },
+        "placement": "bottom",
+        "font_size": "medium",
+        "position": {
+            "x": 420,
+            "y": 87
+        },
+        "rotation": 30
+    },
+    {
+        "name": "Kittyo",
+        "pfp_url": "assets/pfps/Kittyo.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "Oh demm... time sure flies too fast ig. Say HAPPY BDAY to Fruity! from my side. :)\n\nWell, how are y'all boin btw. I'm not doin much well, but trying to do better. [damm it takes me a lot of time to type a msg on this keypad phone lmao"
+        },
+        "placement": "bottom",
+        "font_size": "small",
+        "position": {
+            "x": 44,
+            "y": 172
+        },
+        "rotation": 30
+    },
+    {
+        "name": "Nitro",
+        "pfp_url": "assets/pfps/Nitro.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "Happy birthday Fruity sama hope you have a wonderful day and a blessed year 🌹"
+        },
+        "placement": "bottom",
+        "font_size": "medium",
+        "position": {
+            "x": 578,
+            "y": 314
+        },
+        "rotation": 30
+    },
+    {
+        "name": "Geppetto",
+        "pfp_url": "assets/pfps/Geppetto.jpg",
+        "msg_type": "text",
+        "msg_content": {
+            "text": "HAPPY 19th BIRTHDAY FRUITY ❣️\n\nYou don't know, but...\n\nYou were the one who brought me into all this chatting, with one simple tag.\n\nYou did just an 'everyone tag' as MOD on an anime discussion site, but this had a huge, indescribable impact on my life.\n\nI will always be very glad for that, no matter if it was not your intent to start a new, second (online) life for me.\n\nYou did.\n\n\nThis opened up a path, were I could be of help to others, which was exactly what I was looking for... a loooong time.\n\nI am having a lot of fun too and made many good friends 💚\n\nThank you so very much!!!\n\n\nOur conversations were open from the start, because that's the way you are:\n\nHonest, straigt forward and bold too. During that time you showed me, how outstanding you are in handling yourself, reflecting, taking all you experienced into account, to be the best you there is possible.\n\nSharing your thoughts about your dream, letting me experience your excitement and your bravery too... I enjoyed every word we exchanged.\n\nAs you can tell from everyone working together, to make this birthday a display of affection, you grew yourself a very kind and deeply connected chatroom family.\n\n\nWe all wish for your next year, to be full of adventures and memorable experiences, but also, finally some time for you to calm down and gather enough strength, to deal with all your new challenges.\n\nThe well-being and health of your family, especially that of your mother, is of course included in our wishes for your future.\n\nYour schedule is packed, we are aware, but every short visit of you in GDC is much appreciate. - Please continue to keep us up to date and keep sharing some of your experiences!\n\n\n010011101011010101100101\n\n(Digital hug)\n\n💚 Be safe and have lots fun 💚"
+        },
+        "placement": "bottom",
+        "font_size": "small",
+        "position": {
+            "x": 154,
+            "y": 311
+        },
+        "rotation": 30
+    },
+    {
+        "name": "Papers",
+        "pfp_url": "assets/pfps/Papers.jpg",
+        "msg_type": "url",
+        "msg_content": {
+            "url": "papers-message"
+        },
+        "placement": "bottom",
+        "font_size": "medium",
+        "position": {
+            "x": 267,
+            "y": 265
         },
         "rotation": 30
     }
 ]
+
+

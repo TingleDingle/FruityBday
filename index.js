@@ -193,20 +193,37 @@ class MessageState {
         const message = this.messagesData[this.selectedIndex];
         const bannerContainer = $('#banner-container');
 
-        this.overlayElement = $('<div>')
-            .attr('id', 'side-overlay')
-            .addClass(`side-overlay-${side}`)
-            .append(
-                $('<p>')
-                    .text(message.msg_content.text)
-                    .addClass('overlay-text')
-            )
-            .append(
-                $('<p>')
-                    .text(`- ${message.name}`)
-                    .addClass('overlay-name')
-            )
-            .appendTo(bannerContainer);
+        if (message.msg_type === 'text') {
+            this.overlayElement = $('<div>')
+                .attr('id', 'side-overlay')
+                .addClass(`side-overlay-${side}`)
+                .append(
+                    $('<p>')
+                        .text(message.msg_content.text)
+                        .addClass('overlay-text')
+                        .addClass(message.font_size === 'small' ? 'text-sm' : message.font_size === 'large' ? 'text-5xl' : 'text-3xl')
+                )
+                .append(
+                    $('<p>')
+                        .text(`- ${message.name}`)
+                        .addClass('overlay-name')
+                )
+                .appendTo(bannerContainer);
+            
+            this.overlayElement.find('.overlay-text').scrollTop(0);
+        } else if (message.msg_type === 'url') {
+            const targetId = message.msg_content.url;
+            if (targetId) {
+                const targetElement = $(`#${targetId}`);
+                $('html, body').animate({
+                    scrollTop: targetElement.offset().top
+                }, 500);
+                targetElement.addClass('flash-box-shadow');
+                setTimeout(() => {
+                    targetElement.removeClass('flash-box-shadow');
+                }, 2000);
+            }
+        }
     }
 
     removeOverlay() {
