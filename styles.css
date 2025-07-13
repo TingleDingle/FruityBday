@@ -153,9 +153,13 @@
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+#main-message p {
+    margin: 0px 8px;
+}
+
 .main-msg-img {
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
 }
 
 .pfp-container {
@@ -229,7 +233,7 @@
 }
 
 .overlay-name {
-    font-size: 14px;
+    font-size: 11px;
     color: #e1e1e1;
     align-self: end;
 }
@@ -282,6 +286,15 @@
     .overlay-text.overlay-overflow {
         justify-content: flex-start;
         align-items: flex-start;
+    }
+
+    .overlay-name {
+        font-size: 14px;
+    }
+
+    .main-msg-img {
+        width: 150px;
+        height: 150px;
     }
 }
 
