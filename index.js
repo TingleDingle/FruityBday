@@ -58,7 +58,6 @@ async function onYouTubeIframeAPIReady() {
         playerVars: {
             listType: 'playlist',
             playlist: shuffledVideoIds.join(','),
-            autoplay: 1,
         },
         events: {
             onReady: onPlayerReady,
