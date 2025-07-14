@@ -249,23 +249,23 @@
         "placement": "bottom",
         "font_size": "small",
         "position": {
-            "x": 120,
-            "y": 380
+            "x": 50,
+            "y": 423
         },
         "rotation": 30
     },
     {
         "name": "Sathvik",
         "pfp_url": "assets/pfps/Sathvik.jpg",
-        "msg_type": "url",
+        "msg_type": "text",
         "msg_content": {
             "text": "Count your age by friends, not years. Count your life by smiles, not tears.\n by John Lennon"
         },
         "placement": "bottom",
         "font_size": "medium",
         "position": {
-            "x": 200,
-            "y": 100
+            "x": 542,
+            "y": 218
         },
         "rotation": 30
     }
